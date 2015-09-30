@@ -11,20 +11,25 @@ our $scenario = {
     items => [
         {
             type     => 'function_call',
-            template => "PERLANCAR::Text::Levenshtein::editdist(<arg>)"
+            template => "PERLANCAR::Text::Levenshtein::editdist(<word1>, <word2>)"
         },
         {
             type     => 'function_call',
-            template => "Text::Levenshtein::fastdistance(<arg>)",
+            template => "Text::Levenshtein::fastdistance(<word1>, <word2>)",
         },
         {
             type     => 'function_call',
-            template => "Text::Levenshtein::XS::distance(<arg>)",
+            template => "Text::Levenshtein::XS::distance(<word1>, <word2>)",
         },
         {
             type     => 'function_call',
-            template => "Text::LevenshteinXS::distance(<arg>)",
+            template => "Text::LevenshteinXS::distance(<word1>, <word2>)",
         },
+    ],
+    function_args_sets => [
+        { args => {word1=>"a"      , word2=>"aa"},      result => 1 },
+        { args => {word1=>"foo"    , word2=>"bar"},     result => 3 },
+        { args => {word1=>"program", word2=>"porgram"}, result => 2 },
     ],
 };
 
