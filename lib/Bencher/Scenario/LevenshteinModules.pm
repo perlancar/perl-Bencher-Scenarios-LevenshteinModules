@@ -1,4 +1,4 @@
-package Bench::Scenario::LevenshteinModules;
+package Bencher::Scenario::LevenshteinModules;
 
 # DATE
 # VERSION
@@ -22,10 +22,10 @@ our $scenario = {
             fcall_template => "Text::LevenshteinXS::distance(<word1>, <word2>)",
         },
     ],
-    data_sets => [
-        { args => {word1=>"a"      , word2=>"aa"},      result => 1 },
-        { args => {word1=>"foo"    , word2=>"bar"},     result => 3 },
-        { args => {word1=>"program", word2=>"porgram"}, result => 2 },
+    datasets => [
+        { name=>"a",       args => {word1=>"a"      , word2=>"aa"},      result => 1 },
+        { name=>"foo",     args => {word1=>"foo"    , word2=>"bar"},     result => 3 },
+        { name=>"program", args => {word1=>"program", word2=>"porgram"}, result => 2 },
     ],
 };
 
