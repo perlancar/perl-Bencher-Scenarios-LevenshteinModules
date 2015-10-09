@@ -31,3 +31,7 @@ our $scenario = {
 
 1;
 # ABSTRACT: Benchmark various modules calculating the Levenshtein edit distance
+
+=head1 SYNOPSIS
+
+ % bencher -m LevenshteinModules [other options]...
