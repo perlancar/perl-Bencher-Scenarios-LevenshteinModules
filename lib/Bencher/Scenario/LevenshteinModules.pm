@@ -21,6 +21,12 @@ our $scenario = {
         {
             fcall_template => "Text::LevenshteinXS::distance(<word1>, <word2>)",
         },
+        {
+            fcall_template => "Text::Levenshtein::Damerau::PP::pp_edistance(<word1>, <word2>)",
+        },
+        {
+            fcall_template => "Text::Levenshtein::Damerau::XS::xs_edistance(<word1>, <word2>)",
+        },
     ],
     datasets => [
         { name=>"a",       args => {word1=>"a"      , word2=>"aa"},      result => 1 },
