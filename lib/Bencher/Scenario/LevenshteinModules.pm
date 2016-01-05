@@ -8,6 +8,7 @@ use strict;
 use warnings;
 
 our $scenario = {
+    summary => 'Benchmark various modules calculating the Levenshtein edit distance',
     participants => [
         {
             fcall_template => "PERLANCAR::Text::Levenshtein::editdist(<word1>, <word2>)",
@@ -36,8 +37,4 @@ our $scenario = {
 };
 
 1;
-# ABSTRACT: Benchmark various modules calculating the Levenshtein edit distance
-
-=head1 SYNOPSIS
-
- % bencher -m LevenshteinModules [other options]...
+# ABSTRACT:
