@@ -5,6 +5,7 @@ package Bencher::Scenario::LevenshteinModules;
 
 use 5.010001;
 use strict;
+use utf8;
 use warnings;
 
 our $scenario = {
@@ -33,6 +34,8 @@ our $scenario = {
         { name=>"a",       args => {word1=>"a"      , word2=>"aa"},      result => 1 },
         { name=>"foo",     args => {word1=>"foo"    , word2=>"bar"},     result => 3 },
         { name=>"program", args => {word1=>"program", word2=>"porgram"}, result => 2 },
+        { name=>"reve"   , args => {word1=>"reve"   , word2=>"rêves"},   result => 3, tags=>['unicode'] },
+        { name=>"euro"   , args => {word1=>"Euro"   , word2=>"€uro"},    result => 2, tags=>['unicode'] },
     ],
 };
 
