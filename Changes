@@ -1,5 +1,12 @@
 Revision history for Bench-Scenario-LevenshteinModules
 
+0.04    2016-01-10 (PERLANCAR)
+
+	- Add some Unicode datasets [RT#111029].
+
+	- [Bugfix] [dzil] Plugin ordering.
+
+
 0.03    2016-01-05 (PERLANCAR)
 
         - No functional changes.
