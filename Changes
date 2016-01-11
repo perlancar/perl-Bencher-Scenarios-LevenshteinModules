@@ -1,5 +1,13 @@
 Revision history for Bench-Scenario-LevenshteinModules
 
+0.07    2016-01-11 (PERLANCAR)
+
+        - No functional changes.
+
+        - [build] Rebuild with new version of Bencher (0.28) for a nicer results
+          table.
+
+
 0.06    2016-01-11 (PERLANCAR)
 
 	- Set on_result_failure to warn by default, because the results are
