@@ -1,5 +1,13 @@
 Revision history for Bench-Scenario-LevenshteinModules
 
+0.06    2016-01-11 (PERLANCAR)
+
+	- Set on_result_failure to warn by default, because the results are
+	  different for some modules due to algorithm difference.
+
+	- Also tag PERLANCAR::Text::Levenshtein as no_unicode_support.
+
+
 0.05    2016-01-10 (PERLANCAR)
 
 	- Exclude Text::LevenshteinXS from Unicode tests [RT#111029].
