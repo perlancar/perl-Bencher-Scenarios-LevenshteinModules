@@ -10,6 +10,9 @@ use warnings;
 
 our $scenario = {
     summary => 'Benchmark various modules calculating the Levenshtein edit distance',
+    modules => {
+        'Text::Levenshtein' => 0.11,
+    },
     participants => [
         {
             fcall_template => "PERLANCAR::Text::Levenshtein::editdist(<word1>, <word2>)",
@@ -39,6 +42,7 @@ our $scenario = {
         { name=>"reve"   , args => {word1=>"reve"   , word2=>"rêves"},   result => 3, tags=>['unicode'], exclude_participant_tags=>['no_unicode_support'] },
         { name=>"euro"   , args => {word1=>"Euro"   , word2=>"€uro"},    result => 1, tags=>['unicode'], exclude_participant_tags=>['no_unicode_support'] },
     ],
+    on_result_failure => 'warn',
 };
 
 1;
