@@ -13,6 +13,7 @@ our $scenario = {
     participants => [
         {
             fcall_template => "PERLANCAR::Text::Levenshtein::editdist(<word1>, <word2>)",
+            tags => ['no_unicode_support'],
         },
         {
             fcall_template => "Text::Levenshtein::fastdistance(<word1>, <word2>)",
