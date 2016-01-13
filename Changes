@@ -1,5 +1,10 @@
 Revision history for Bench-Scenario-LevenshteinModules
 
+0.08    2016-01-13 (PERLANCAR)
+
+	- Fix expected result for dataset=reve [RT#111029].
+
+
 0.07    2016-01-11 (PERLANCAR)
 
         - No functional changes.
