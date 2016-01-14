@@ -1,5 +1,11 @@
 Revision history for Bench-Scenario-LevenshteinModules
 
+0.09    2016-01-14 (PERLANCAR)
+
+	- Split Damerau-Levenshtein modules to a separate scenario because they
+          are different algorithms and produce different result [#111171].
+
+
 0.08    2016-01-13 (PERLANCAR)
 
 	- Fix expected result for dataset=reve [RT#111029].
