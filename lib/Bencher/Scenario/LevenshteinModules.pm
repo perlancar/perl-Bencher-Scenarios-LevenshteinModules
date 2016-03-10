@@ -11,7 +11,7 @@ use warnings;
 our $scenario = {
     summary => 'Benchmark various modules calculating the Levenshtein edit distance',
     modules => {
-        'Text::Levenshtein' => 0.11,
+        'Text::Levenshtein' => {version => 0.11},
     },
     participants => [
         {
