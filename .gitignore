@@ -1,3 +1,4 @@
 Bencher-Scenario-LevenshteinModules-*
 .build
 *~
+nytprof*
