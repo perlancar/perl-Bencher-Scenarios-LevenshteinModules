@@ -25,6 +25,9 @@ our $scenario = {
             fcall_template => "Text::Levenshtein::XS::distance(<word1>, <word2>)",
         },
         {
+            fcall_template => "Text::Levenshtein::Flexible::levenshtein(<word1>, <word2>)",
+        },
+        {
             fcall_template => "Text::LevenshteinXS::distance(<word1>, <word2>)",
             tags => ['no_unicode_support'],
         },
