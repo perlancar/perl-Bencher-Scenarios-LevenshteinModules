@@ -1,5 +1,12 @@
 Revision history for Bench-Scenarios-LevenshteinModules
 
+0.11    2016-10-14 (PERLANCAR)
+
+	- Add participant: Text::Levenshtein::Flexible.
+
+	- Rename dist from Bencher-Scenario{,s}-LevenshteinModules.
+
+
 0.10    2016-01-20 (PERLANCAR)
 
         - No functional changes.
