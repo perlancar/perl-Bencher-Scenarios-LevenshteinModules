@@ -1,5 +1,3 @@
-Revision history for Bench-Scenarios-LevenshteinModules
-
 0.11    2016-10-14 (PERLANCAR)
 
 	- Add participant: Text::Levenshtein::Flexible.
