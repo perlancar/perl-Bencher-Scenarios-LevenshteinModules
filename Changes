@@ -1,3 +1,8 @@
+0.12    2017-01-13 (PERLANCAR)
+
+	- Add participant: Text::Fuzzy.
+
+
 0.11    2016-10-14 (PERLANCAR)
 
 	- Add participant: Text::Levenshtein::Flexible.
