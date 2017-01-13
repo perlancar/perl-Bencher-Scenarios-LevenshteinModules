@@ -31,6 +31,10 @@ our $scenario = {
             fcall_template => "Text::LevenshteinXS::distance(<word1>, <word2>)",
             tags => ['no_unicode_support'],
         },
+        {
+            module => 'Text::Fuzzy',
+            code_template => "Text::Fuzzy->new(<word1>)->distance(<word2>)",
+        },
     ],
     datasets => [
         { name=>"a",       args => {word1=>"a"      , word2=>"aa"},      result => 1 },

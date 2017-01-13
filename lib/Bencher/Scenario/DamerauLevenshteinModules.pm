@@ -19,6 +19,10 @@ our $scenario = {
         {
             fcall_template => "Text::Levenshtein::Damerau::XS::xs_edistance(<word1>, <word2>)",
         },
+        {
+            module => 'Text::Fuzzy',
+            code_template => "Text::Fuzzy->new(<word1>, trans=>1)->distance(<word2>)",
+        },
     ],
     datasets => [
         { name=>"a",       args => {word1=>"a"      , word2=>"aa"},      result => 1 },
