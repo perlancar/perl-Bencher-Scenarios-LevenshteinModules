@@ -2,3 +2,4 @@ Bencher-Scenarios-LevenshteinModules-*
 .build
 *~
 nytprof*
+.DS_Store
